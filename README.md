@@ -21,7 +21,7 @@
 * **Stock Alerts:** Real-time notifications for low-stock items (e.g., "This product is about to run out").
 
 ### 💻 Point of Sale (POS) Interface
-* **Efficient Processing:** Cashiers can input product codes manually or via barcode simulation.
+* **Efficient Processing:** Cashiers can input product codes manually.
 * **Dual Screen Support:** Features a "Free Window" button that creates a secondary screen for customers to view their shopping cart in real-time.
 * **Smart Calculation:** Automatically calculates totals and applies active discounts.
 
