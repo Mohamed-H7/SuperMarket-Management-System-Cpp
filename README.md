@@ -49,5 +49,11 @@
 * **Encryption:** SHA-256 Algorithm
 * **IDE:** Qt Creator
 
+## Widgets
+![1](widgets/1.png)
+![2](widgets/2.png)
+![3](widgets/3.png)
+![4](widgets/4.png)
+
 ---
 _This project was developed by Mohamed Hamdo as part of the Computer Engineering coursework at Necmettin Erbakan University._
