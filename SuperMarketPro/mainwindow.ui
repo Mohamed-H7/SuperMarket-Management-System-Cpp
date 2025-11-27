@@ -1,0 +1,5450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+	background-color: rgb(0, 0, 0);
+	border-radius:10px;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" colspan="3">
+     <widget class="QWidget" name="widget_menuBar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>33</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widget_menuBar {
+	background-color: rgb(0, 0, 0);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	alternate-background-color: rgb(0, 0, 0);
+
+}
+
+QPushButton:hover  {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_38">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_37">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="logo">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:hover  {
+	background-color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/logo/icon/logo/logo ww1.png</normaloff>:/logo/icon/logo/logo ww1.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="projename">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+        color: white;
+ 
+        font: bold 13px 'Arial';
+
+    }
+</string>
+           </property>
+           <property name="text">
+            <string>SuperMarketPro</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>898</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <layout class="QGridLayout" name="gridLayout_36">
+         <property name="horizontalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="minus_Button">
+           <property name="minimumSize">
+            <size>
+             <width>37</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/menu icon/icon/menu icon/minus.png</normaloff>:/menu icon/icon/menu icon/minus.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>17</width>
+             <height>17</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="FullScreen_Button">
+           <property name="minimumSize">
+            <size>
+             <width>37</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/menu icon/icon/menu icon/maximize.png</normaloff>:/menu icon/icon/menu icon/maximize.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>17</width>
+             <height>17</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="menubar_kapat_button">
+           <property name="minimumSize">
+            <size>
+             <width>37</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	border-top-right-radius:10px;
+}
+
+QPushButton:hover  {
+	background-color: red;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/menu icon/icon/menu icon/close.png</normaloff>:/menu icon/icon/menu icon/close.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>17</width>
+             <height>17</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QWidget" name="main" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: white;
+}
+
+#main {
+	border-bottom-right-radius:10px;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <property name="leftMargin">
+        <number>7</number>
+       </property>
+       <property name="topMargin">
+        <number>7</number>
+       </property>
+       <property name="rightMargin">
+        <number>7</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="main_bar" native="true">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>11</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="kapat_button">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 2px 5px; 
+
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+	icon: url(:/icons/icon/logout b.png);
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+	icon: url(:/icons/icon/logout w.png);
+}</string>
+            </property>
+            <property name="text">
+             <string> Kapat</string>
+            </property>
+            <property name="icon">
+             <iconset resource="rec.qrc">
+              <normaloff>:/icons/icon/logout w.png</normaloff>
+              <normalon>:/icons/icon/logout w.png</normalon>:/icons/icon/logout w.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string/>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="noti_button">
+            <property name="styleSheet">
+             <string notr="true">QWidget{
+	border:none;
+}
+
+QPushButton:pressed {
+    background-color: lightgray;
+	border-radius:10px;
+}
+
+QPushButton:hover  {
+	/*image: url(:/noti icons/icon/Notif icon/nott black.png);*/
+background-color: lightgray;
+	border-radius:10px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="rec.qrc">
+              <normaloff>:/noti icons/icon/Notif icon/002-notification-1.png</normaloff>:/noti icons/icon/Notif icon/002-notification-1.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="menu_button">
+            <property name="styleSheet">
+             <string notr="true">QWidget{
+	border:none;
+}
+
+QPushButton:hover  {
+	background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="rec.qrc">
+              <normaloff>:/icons/icon/menu black.png</normaloff>:/icons/icon/menu black.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>532</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="3">
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>5</number>
+         </property>
+         <widget class="QWidget" name="_1Ana_sayfa">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="1">
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>330</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="1">
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QPushButton" name="CiftEkran_button">
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+	border:none;
+}
+
+
+QPushButton:hover  {
+	background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="rec.qrc">
+                      <normaloff>:/other ic/icon/other ico/001-full-screen.png</normaloff>:/other ic/icon/other ico/001-full-screen.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>32</width>
+                      <height>32</height>
+                     </size>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <property name="autoRepeat">
+                     <bool>false</bool>
+                    </property>
+                    <property name="autoExclusive">
+                     <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>148</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Menuden_Sil_button">
+                    <property name="styleSheet">
+                     <string notr="true">QWidget{
+	border:none;
+}
+
+QPushButton:pressed {
+    background-color: lightgray;
+}
+
+QPushButton:hover  {
+	background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="rec.qrc">
+                      <normaloff>:/other ic/icon/other ico/002-delete.png</normaloff>:/other ic/icon/other ico/002-delete.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>32</width>
+                      <height>32</height>
+                     </size>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="total_label">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 2px solid rgb(0, 0, 0);
+border-radius: 10px;
+color: black;
+padding: 8px 5px;
+font-weight:700;</string>
+                  </property>
+                  <property name="text">
+                   <string>Toplam Tutar: 0 TL</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>35</width>
+                    <height>17</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="2" column="0">
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="odeme_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Ödeme</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="iptal_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>iptal</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="2" column="1">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>35</width>
+                    <height>71</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QTableView" name="urunler_list">
+                  <property name="minimumSize">
+                   <size>
+                    <width>349</width>
+                    <height>470</height>
+                   </size>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    gridline-color: black; /* لون خطوط الشبكة بين الخلايا */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+    background-color: #F4F9FA; /* لون خلفية الخلايا */
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                  </property>
+                  <attribute name="horizontalHeaderMinimumSectionSize">
+                   <number>60</number>
+                  </attribute>
+                  <attribute name="horizontalHeaderDefaultSectionSize">
+                   <number>130</number>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+	background-color: rgb(255, 255, 255);
+    color: black; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QToolButton:hover {
+	background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+	color: white;
+}
+
+QToolButton:pressed {
+    background-color:   rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+	color: black; 
+}
+
+QToolButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    border-color: #bdc3c7; 
+}
+/**/
+QPushButton {
+	background-color: rgb(255, 255, 255);
+    color: black; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+	color: white;
+}
+
+QPushButton:pressed {
+    background-color:   rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+	color: black; 
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    border-color: #bdc3c7; 
+}
+
+QLineEdit {
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+    border: 2px solid #bdc3c7; 
+    border-radius: 10px;
+    padding: 8px 12px; 
+    font-size: 16px; 
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; 
+    background-color: #ffffff; /* لون الخلفية عند التركيز */
+}
+
+QLineEdit:hover {
+    border-color: #34495e; /* لون الحدود عند المرور (أسود رمادي) */
+}
+
+QLineEdit:disabled {
+    background-color: #ecf0f1; /* لون الخلفية عندما يكون الحقل معطلاً */
+    color: #95a5a6; /* لون النص عندما يكون الحقل معطلاً */
+    border-color: #bdc3c7; /* لون الحدود عندما يكون الحقل معطلاً */
+}
+
+
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_14">
+                <item row="0" column="0">
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>13</width>
+                    <height>17</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_11">
+                    <item row="0" column="0">
+                     <layout class="QGridLayout" name="gridLayout_10">
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_8">
+                        <item row="0" column="0">
+                         <widget class="QLineEdit" name="lineEdit_urun_numara">
+                          <property name="minimumSize">
+                           <size>
+                            <width>300</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Ürün numarasını giriniz</string>
+                          </property>
+                          <property name="clearButtonEnabled">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLineEdit" name="lineEdit_mikatr">
+                          <property name="placeholderText">
+                           <string>Miktarı giriniz</string>
+                          </property>
+                          <property name="cursorMoveStyle">
+                           <enum>Qt::CursorMoveStyle::LogicalMoveStyle</enum>
+                          </property>
+                          <property name="clearButtonEnabled">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="1" column="0">
+                       <layout class="QGridLayout" name="gridLayout_7">
+                        <item row="0" column="0">
+                         <layout class="QGridLayout" name="gridLayout_3">
+                          <property name="sizeConstraint">
+                           <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+                          </property>
+                          <item row="0" column="0">
+                           <widget class="QToolButton" name="num_1">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>1</string>
+                            </property>
+                            <property name="autoRaise">
+                             <bool>false</bool>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QToolButton" name="num_2">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>2</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2">
+                           <widget class="QToolButton" name="num_3">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>3</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QToolButton" name="num_4">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>4</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QToolButton" name="num_5">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>5</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QToolButton" name="num_6">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>6</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QToolButton" name="num_7">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>7</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="1">
+                           <widget class="QToolButton" name="num_8">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>8</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="2">
+                           <widget class="QToolButton" name="num_9">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>9</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QToolButton" name="num_0">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>0</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="2" column="0">
+                       <layout class="QGridLayout" name="gridLayout_9">
+                        <item row="0" column="0">
+                         <widget class="QPushButton" name="gir_button">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Gir</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QPushButton" name="sil_button">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Sil</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <spacer name="verticalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>18</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="_2Magaza">
+          <layout class="QGridLayout" name="gridLayout_27">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_4" native="true">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}
+
+QLineEdit {
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+    border: 2px solid #bdc3c7; 
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    font-size: 16px; 
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; 
+    background-color: #ffffff; 
+}
+
+QLineEdit:hover {
+    border-color: #34495e; 
+}
+
+/*-----------------------*/
+
+QComboBox {
+    background-color: black; 
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; 
+    padding: 4px; 
+    color: white; 
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_30">
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_33">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <pointsize>15</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Magaza</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="font">
+                   <font>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>Mağaza sayfasına hoş geldiniz. Buradan mağazanın ürünlerini kontrol edebilirsiniz.</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_28">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="urun_ekle">
+                  <property name="text">
+                   <string>Ürün ekle</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="uruun_sil">
+                  <property name="text">
+                   <string>ürünü silme</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="urun_duzenle">
+                  <property name="text">
+                   <string>ürünü düzenleyin</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer_8">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <layout class="QGridLayout" name="gridLayout_29">
+                <item row="0" column="0">
+                 <widget class="QComboBox" name="kategori_urunler">
+                  <property name="minimumSize">
+                   <size>
+                    <width>151</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                  <property name="frame">
+                   <bool>true</bool>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Kategori seçiniz</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_urun_arayin">
+                  <property name="placeholderText">
+                   <string>ürün arayın</string>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="horizontalSpacer_7">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="0">
+               <widget class="QTableView" name="urunler_table">
+                <property name="styleSheet">
+                 <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                </property>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>130</number>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>130</number>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="_3Ra_An">
+          <layout class="QGridLayout" name="gridLayout_40">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_6" native="true">
+             <property name="styleSheet">
+              <string notr="true">QRadioButton {
+            font: 16px 'Arial';
+            color: #333333;
+	background-color: white;
+                 text-align: center;
+        padding: 10px;
+        font: bold 13px 'Arial';
+        }
+
+QRadioButton::indicator {
+            width: 0px; 
+            height: 0px;
+}
+
+        QRadioButton::indicator:checked {
+            background-color: transparent;
+        }
+
+        QRadioButton::indicator:unchecked {
+            background-color: transparent;
+        }
+
+        QRadioButton:checked {
+            color: white; 
+	background-color: black;
+        }
+
+        QRadioButton::indicator:checked {
+            border-radius: 10px;
+        }
+
+QRadioButton:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+QRadioButton:checked:hover {
+	background-color: black;
+
+}
+
+
+
+/*----------------------*/
+QPushButton {
+		background-color: white;
+    color: black; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+
+QPushButton:checked{
+	background-color: black;
+	color:white;
+	font-weight:bold;
+}
+
+QPushButton:checked:hover{
+	background-color: black;
+}
+
+QPushButton:hover  {
+	background-color: rgba(0, 0, 0, 0.2);
+	
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    border-color: #bdc3c7; 
+}
+
+
+
+      </string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_35">
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="styleSheet">
+                 <string notr="true">QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>665</width>
+                   <height>1831</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_69">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>7</number>
+                  </property>
+                  <item row="1" column="0">
+                   <layout class="QGridLayout" name="gridLayout_59">
+                    <item row="0" column="0">
+                     <layout class="QGridLayout" name="gridLayout_41">
+                      <item row="0" column="0">
+                       <widget class="Line" name="line_4">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLabel" name="label_7">
+                        <property name="maximumSize">
+                         <size>
+                          <width>110</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>13</pointsize>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>Raporlar</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="2">
+                       <widget class="Line" name="line_6">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="1" column="0">
+                     <layout class="QGridLayout" name="gridLayout_47">
+                      <item row="0" column="1">
+                       <widget class="QWidget" name="widget_7" native="true">
+                        <layout class="QGridLayout" name="gridLayout_46">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_45">
+                           <item row="0" column="0">
+                            <widget class="QPushButton" name="satisR_button">
+                             <property name="text">
+                              <string>Satış raporları</string>
+                             </property>
+                             <property name="checkable">
+                              <bool>true</bool>
+                             </property>
+                             <property name="checked">
+                              <bool>true</bool>
+                             </property>
+                             <property name="autoExclusive">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QPushButton" name="indirimR_button">
+                             <property name="enabled">
+                              <bool>true</bool>
+                             </property>
+                             <property name="text">
+                              <string>İndirim raporları</string>
+                             </property>
+                             <property name="checkable">
+                              <bool>true</bool>
+                             </property>
+                             <property name="autoExclusive">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="2">
+                            <widget class="QPushButton" name="EnvanterR_button">
+                             <property name="text">
+                              <string>Depo raporları</string>
+                             </property>
+                             <property name="checkable">
+                              <bool>true</bool>
+                             </property>
+                             <property name="autoExclusive">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_22">
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Rapor türünü seçiniz:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_genel" native="true">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_42">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_32">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_5">
+                         <property name="font">
+                          <font>
+                           <pointsize>15</pointsize>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(0, 0, 0);</string>
+                         </property>
+                         <property name="text">
+                          <string>Raporlar ve Analizler</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <spacer name="horizontalSpacer_10">
+                         <property name="orientation">
+                          <enum>Qt::Orientation::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>13</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="0" column="2">
+                        <layout class="QGridLayout" name="gridLayout_31">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <item row="0" column="2">
+                          <widget class="QRadioButton" name="radioButton_tum">
+                           <property name="font">
+                            <font>
+                             <family>Arial</family>
+                             <pointsize>-1</pointsize>
+                             <italic>false</italic>
+                             <bold>true</bold>
+                             <underline>false</underline>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+            border: 2px solid black;
+        	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+        }</string>
+                           </property>
+                           <property name="text">
+                            <string>TÜM </string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                           <property name="autoRepeat">
+                            <bool>false</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QRadioButton" name="radioButton_7gun">
+                           <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+            border: 2px solid black;
+        	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+        }</string>
+                           </property>
+                           <property name="text">
+                            <string>7 GÜN</string>
+                           </property>
+                           <property name="checked">
+                            <bool>false</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QRadioButton" name="radioButton_30gun">
+                           <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+            border: 2px solid black;
+
+
+        }</string>
+                           </property>
+                           <property name="text">
+                            <string>30 GÜN</string>
+                           </property>
+                           <property name="checked">
+                            <bool>false</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="0" column="3">
+                        <widget class="QLabel" name="tarih_label">
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>-1</pointsize>
+                           <italic>false</italic>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        font: bold 13px 'Arial';
+        text-align: center;
+        background-image: url(:/other ic/icon/other ico/calendar b.png); /* إضافة الأيقونة كخلفية */
+        background-repeat: no-repeat;
+        background-position:  left center; /* تغيير موضع الأيقونة */
+        padding-left: 35px; /* مسافة للحفاظ على النص بعيدًا عن الأيقونة */
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>Bugün, 9 Sep 2024</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <layout class="QGridLayout" name="gridLayout_34">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="TotalSatis_label">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>Toplam Satış
+
+10 TL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="Tkar_label">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>Toplam kar
+
+10 TL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QLabel" name="SatilanUrunSayisi_label">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>Satılan ürün sayısı
+
+10 </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="AzSatis_label">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>En az satış
+
+10 TL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLabel" name="CokSatis_label">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                         </property>
+                         <property name="text">
+                          <string>En çok satış
+
+10 TL</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="2" column="0">
+                      <layout class="QGridLayout" name="gridLayout_49">
+                       <item row="0" column="0">
+                        <widget class="Line" name="line_5">
+                         <property name="orientation">
+                          <enum>Qt::Orientation::Horizontal</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_11">
+                         <property name="maximumSize">
+                          <size>
+                           <width>110</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>13</pointsize>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(0, 0, 0);</string>
+                         </property>
+                         <property name="text">
+                          <string>İstatistikler</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignmentFlag::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="Line" name="line_7">
+                         <property name="orientation">
+                          <enum>Qt::Orientation::Horizontal</enum>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="ortalama_label">
+                       <property name="styleSheet">
+                        <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                       </property>
+                       <property name="text">
+                        <string>Ortalama satışlar:
+
+- Günlük: 0 TL
+
+- Haftalık: 0 TL 
+
+- Aylık: 0 TL
+
+- Yıllık: 0 TL</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <layout class="QGridLayout" name="gridLayout_75">
+                    <item row="0" column="0">
+                     <widget class="Line" name="line_8">
+                      <property name="orientation">
+                       <enum>Qt::Orientation::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLabel" name="label_13">
+                      <property name="maximumSize">
+                       <size>
+                        <width>110</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>13</pointsize>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 0, 0);</string>
+                      </property>
+                      <property name="text">
+                       <string>Grafikler</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="Line" name="line_9">
+                      <property name="orientation">
+                       <enum>Qt::Orientation::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QStackedWidget" name="stackedWidget_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>301</height>
+                     </size>
+                    </property>
+                    <widget class="QWidget" name="_1satis">
+                     <layout class="QGridLayout" name="gridLayout_39">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QWidget" name="widget" native="true">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox {
+    background-color: black; /* لون الخلفية */
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 4px; /* حشوة داخلية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+</string>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_68">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>2</number>
+                         </property>
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_67">
+                           <property name="horizontalSpacing">
+                            <number>15</number>
+                           </property>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="EnAzSatilanUrun">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>En az satan ürün
+
+--</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="EnCokSatilanUrun">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>En çok satan ürün
+
+--</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="2">
+                            <widget class="QLabel" name="EnAzKaraliUrun">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>En az karlı ürün
+
+--</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="3">
+                            <widget class="QLabel" name="EnCokKaraliUrun">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>En karlı ürün
+
+--</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="0">
+                          <spacer name="verticalSpacer_7">
+                           <property name="orientation">
+                            <enum>Qt::Orientation::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>231</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="_2indirim">
+                     <layout class="QGridLayout" name="gridLayout_58">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QWidget" name="widget_8" native="true">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox {
+    background-color: black; /* لون الخلفية */
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 4px; /* حشوة داخلية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+</string>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_66">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>2</number>
+                         </property>
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_65">
+                           <property name="horizontalSpacing">
+                            <number>7</number>
+                           </property>
+                           <property name="verticalSpacing">
+                            <number>12</number>
+                           </property>
+                           <item row="0" column="0">
+                            <layout class="QGridLayout" name="gridLayout_61">
+                             <property name="horizontalSpacing">
+                              <number>15</number>
+                             </property>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="ensikIndirimler_label">
+                               <property name="styleSheet">
+                                <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                               </property>
+                               <property name="text">
+                                <string>En sık kullanılan indirimler
+
+--</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="EnAzIndirimler_label">
+                               <property name="styleSheet">
+                                <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                               </property>
+                               <property name="text">
+                                <string>En az kullanılan indirimler
+
+--</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="2">
+                              <widget class="QLabel" name="indirimSayisi_label">
+                               <property name="styleSheet">
+                                <string notr="true">QLabel {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 15px;
+		font-weight:700;
+    }</string>
+                               </property>
+                               <property name="text">
+                                <string>Toplam indirim sayısı
+
+--</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="0">
+                          <spacer name="verticalSpacer_6">
+                           <property name="orientation">
+                            <enum>Qt::Orientation::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>126</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="_3envanter">
+                     <layout class="QGridLayout" name="gridLayout_43">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QWidget" name="widget_9" native="true">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox {
+    background-color: black; /* لون الخلفية */
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 4px; /* حشوة داخلية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+</string>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_57">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>2</number>
+                         </property>
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_51">
+                           <property name="spacing">
+                            <number>7</number>
+                           </property>
+                           <item row="0" column="0">
+                            <widget class="QComboBox" name="Depo_durumu">
+                             <property name="minimumSize">
+                              <size>
+                               <width>141</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <item>
+                              <property name="text">
+                               <string>Depo durumu</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Bitti</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Bitecek</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Mevcut</string>
+                              </property>
+                             </item>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <spacer name="horizontalSpacer_11">
+                             <property name="orientation">
+                              <enum>Qt::Orientation::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>318</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item row="1" column="0">
+                          <layout class="QGridLayout" name="gridLayout_56">
+                           <item row="0" column="0">
+                            <widget class="QTableView" name="depo">
+                             <property name="styleSheet">
+                              <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+                             </property>
+                             <property name="editTriggers">
+                              <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                             </property>
+                             <attribute name="horizontalHeaderStretchLastSection">
+                              <bool>true</bool>
+                             </attribute>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <layout class="QGridLayout" name="gridLayout_60">
+                    <property name="horizontalSpacing">
+                     <number>7</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QWidget" name="widget_11" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>341</width>
+                        <height>341</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_74">
+                       <property name="leftMargin">
+                        <number>2</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>2</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>2</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>2</number>
+                       </property>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_15">
+                         <property name="font">
+                          <font>
+                           <pointsize>10</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(0, 0, 0);</string>
+                         </property>
+                         <property name="text">
+                          <string>Bir grafik, her ürün kategorisi (gıda, içecekler, giysiler, vb.) için kâr yüzdesini gösterir.</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QChartView" name="graphicsView">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>350</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_16">
+                         <property name="font">
+                          <font>
+                           <pointsize>10</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(0, 0, 0);</string>
+                         </property>
+                         <property name="text">
+                          <string>Grafik, son altı ay boyunca her kategori için satılan ürün sayısının aylık dağılımını gösterir.</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <layout class="QGridLayout" name="gridLayout_73">
+                         <item row="0" column="0">
+                          <layout class="QGridLayout" name="gridLayout_72">
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_12">
+                             <property name="font">
+                              <font>
+                               <pointsize>13</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);</string>
+                             </property>
+                             <property name="text">
+                              <string>Pasta grafiği:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <spacer name="horizontalSpacer_14">
+                             <property name="orientation">
+                              <enum>Qt::Orientation::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="3" column="0">
+                        <layout class="QGridLayout" name="gridLayout_76">
+                         <item row="0" column="2">
+                          <widget class="QToolButton" name="sutungrafik_guncelleme">
+                           <property name="styleSheet">
+                            <string notr="true">QToolButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 2px 5px; 
+
+}
+
+
+QToolButton:pressed {
+    background-color:   black; 
+    border-color: black;
+	color: white; 
+}
+
+QToolButton:hover  {
+background-color: rgb(98, 43, 18);
+	border-radius:10px;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="rec.qrc">
+                             <normaloff>:/other ic/icon/other ico/refresh.png</normaloff>:/other ic/icon/other ico/refresh.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>24</width>
+                             <height>24</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <spacer name="horizontalSpacer_15">
+                           <property name="orientation">
+                            <enum>Qt::Orientation::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label_14">
+                           <property name="font">
+                            <font>
+                             <pointsize>13</pointsize>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: rgb(0, 0, 0);</string>
+                           </property>
+                           <property name="text">
+                            <string>Sütun Grafik:</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QChartView" name="graphicsView_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>350</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="_4indiriimler">
+          <layout class="QGridLayout" name="gridLayout_48">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_5" native="true">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}
+
+QLineEdit {
+    background-color: #ecf0f1; /* لون الخلفية */
+    color: #2c3e50; /* لون النص */
+    border: 2px solid #bdc3c7; /* لون الحدود */
+    border-radius: 10px; /* زوايا دائرية */
+    padding: 8px 12px; /* الحشوة الداخلية */
+    font-size: 16px; /* حجم الخط */
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; /* لون الحدود عند التركيز (أسود داكن) */
+    background-color: #ffffff; /* لون الخلفية عند التركيز */
+}
+
+QLineEdit:hover {
+    border-color: #34495e; /* لون الحدود عند المرور (أسود رمادي) */
+}
+
+/*-----------------------*/
+
+QComboBox {
+    background-color: black; /* لون الخلفية */
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 4px; /* حشوة داخلية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_55">
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_53">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="indirimi_ekle">
+                  <property name="text">
+                   <string>İndirim ekle</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="indirimi_sil">
+                  <property name="text">
+                   <string>İndirimi silme</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="indirimi_duzenleyin">
+                  <property name="text">
+                   <string>İndirimi düzenleyin</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer_19">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_52">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_20">
+                  <property name="font">
+                   <font>
+                    <pointsize>15</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>İndirimler</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_21">
+                  <property name="font">
+                   <font>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>İndirimler sayfasına hoş geldiniz Mağazanın indirimlerini buradan yönetebilirsiniz.</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <layout class="QGridLayout" name="gridLayout_54">
+                <item row="0" column="0">
+                 <widget class="QComboBox" name="indirim_durumu">
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>İndirim durumunu</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Aktif indirimler</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>İndirimler sona erdi</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>İndirimler başlamadı</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>İndirimler sona erecek</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_20">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="0">
+               <widget class="QTableView" name="indirimler_tablo">
+                <property name="styleSheet">
+                 <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                </property>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>70</number>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>130</number>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="_5KontrolPaneli">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_13" native="true">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ecf0f1; /* لون الخلفية */
+    color: #2c3e50; /* لون النص */
+    border: 2px solid #bdc3c7; /* لون الحدود */
+    border-radius: 10px; /* زوايا دائرية */
+    padding: 8px 12px; /* الحشوة الداخلية */
+    font-size: 16px; /* حجم الخط */
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; /* لون الحدود عند التركيز (أسود داكن) */
+    background-color: #ffffff; /* لون الخلفية عند التركيز */
+}
+
+QLineEdit:hover {
+    border-color: #34495e; /* لون الحدود عند المرور (أسود رمادي) */
+}
+
+/*-----------------------*/
+
+QComboBox {
+    background-color: black; /* لون الخلفية */
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 4px; /* حشوة داخلية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_71">
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_17">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_26">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_25">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Kontrol Paneli</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_24">
+                    <property name="font">
+                     <font>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Bu sayfa aracılığıyla mevcut hesaplarınızı yönetebilir, etkinleştirebilir ve devre dışı bırakabilirsiniz.</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QGridLayout" name="gridLayout_44">
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_12">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QComboBox" name="hesap_durumu">
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Hesap Durumu</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Aktif Hesaplar</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Pasif Hesaplar</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_70">
+                <item row="0" column="0">
+                 <widget class="QTableView" name="tableView_hesaplar">
+                  <property name="styleSheet">
+                   <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                  </property>
+                  <attribute name="horizontalHeaderMinimumSectionSize">
+                   <number>130</number>
+                  </attribute>
+                  <attribute name="horizontalHeaderDefaultSectionSize">
+                   <number>130</number>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QGridLayout" name="gridLayout_50">
+                  <item row="0" column="0">
+                   <spacer name="verticalSpacer_8">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="1" column="0">
+                   <layout class="QGridLayout" name="gridLayout_15">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_aktif">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-color: rgb(147, 170, 0);
+    color: white; 
+    border: 2px solid rgb(147, 170, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: rgb(147, 170, 0);
+	color: rgb(147, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color:   rgb(147, 170, 0); 
+    border-color: white;
+	color: white; 
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Aktif</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="pushButton_pasif">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-color: red;
+    color: white; 
+    border: 2px solid red;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: red;
+	color: red;
+}
+
+QPushButton:pressed {
+    background-color:   red; 
+    border-color: white;
+	color: white; 
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Pasif</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <spacer name="verticalSpacer_9">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="_6Ayarlar">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_24">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_10" native="true">
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    background-color: black; 
+   	
+    border-radius: 5px; 
+    padding: 4px; 
+    color: white;
+    font-size: 16px;
+    combobox-popup: 0; 
+}
+
+QComboBox:hover {
+   
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px;
+    border-left: 1px solid white;
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; 
+   
+    selection-background-color: black; 
+    selection-color: white; 
+    color: white; 
+}
+
+/*----------------------------*/
+
+QRadioButton {
+    spacing: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+QRadioButton::indicator {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 10px;
+    border: 1px solid black; 
+	background-color:white; 
+}
+
+QRadioButton::indicator:hover {
+    border-color: gray; 
+	background-color: gray;
+}
+
+QRadioButton::indicator:checked {
+    background-color: black; 
+    border-color: black; 
+}
+
+QRadioButton::indicator:checked::before {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+    
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+/*----------------------------*/
+QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 7px 8px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    border-color: #bdc3c7; 
+}
+
+QLineEdit {
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+    border: 2px solid #bdc3c7; 
+    border-radius: 10px; 
+    padding: 7px 8px; 
+    font-size: 14px; 
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; 
+    background-color: #ffffff; 
+}
+
+QLineEdit:hover {
+    border-color: #34495e; 
+}
+
+QLineEdit:disabled {
+    background-color: #ecf0f1; /* لون الخلفية عندما يكون الحقل معطلاً */
+    color: #95a5a6; /* لون النص عندما يكون الحقل معطلاً */
+    border-color: #bdc3c7; /* لون الحدود عندما يكون الحقل معطلاً */
+}
+
+/*-----------------------*/
+
+
+
+
+
+
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_83">
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_82">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_81">
+                  <item row="1" column="0">
+                   <layout class="QGridLayout" name="gridLayout_80">
+                    <property name="horizontalSpacing">
+                     <number>11</number>
+                    </property>
+                    <item row="0" column="1">
+                     <layout class="QGridLayout" name="gridLayout_64">
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_63">
+                        <property name="verticalSpacing">
+                         <number>11</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_29">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Ad-Soyad:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_28">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Telefon numarası:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_31">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>yeni şifre</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="0" column="1">
+                       <layout class="QGridLayout" name="gridLayout_23">
+                        <property name="verticalSpacing">
+                         <number>11</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLineEdit" name="lineEdit_AdSoyad">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLineEdit" name="lineEdit_num">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLineEdit" name="lineEdit_newsifre">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="echoMode">
+                           <enum>QLineEdit::EchoMode::Password</enum>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QGridLayout" name="gridLayout_62">
+                      <property name="horizontalSpacing">
+                       <number>10</number>
+                      </property>
+                      <property name="verticalSpacing">
+                       <number>7</number>
+                      </property>
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_25">
+                        <property name="verticalSpacing">
+                         <number>11</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_23">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Kullanıcı adı:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_27">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>E-Posta:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_30">
+                          <property name="minimumSize">
+                           <size>
+                            <width>40</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>eski şifre</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="0" column="1">
+                       <layout class="QGridLayout" name="gridLayout_20">
+                        <property name="verticalSpacing">
+                         <number>11</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLineEdit" name="lineEdit_username">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="text">
+                           <string>mhm</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLineEdit" name="lineEdit_Email">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLineEdit" name="lineEdit_eskisifre">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="echoMode">
+                           <enum>QLineEdit::EchoMode::Password</enum>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="2">
+                     <layout class="QGridLayout" name="gridLayout_77">
+                      <property name="verticalSpacing">
+                       <number>11</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_gorev">
+                        <property name="minimumSize">
+                         <size>
+                          <width>40</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>Görev:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QPushButton" name="update">
+                        <property name="text">
+                         <string>Güncelleme</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QPushButton" name="changePass">
+                        <property name="text">
+                         <string>Şifre Değiştirme</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_78">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_message">
+                      <property name="minimumSize">
+                       <size>
+                        <width>40</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>15</pointsize>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 0, 0);</string>
+                      </property>
+                      <property name="text">
+                       <string>Merhaba --</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <spacer name="horizontalSpacer_16">
+                      <property name="orientation">
+                       <enum>Qt::Orientation::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>48</width>
+                        <height>25</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="Line" name="line">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_mesajDurumu">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                      <underline>false</underline>
+                      <kerning>true</kerning>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Mesaj</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QGridLayout" name="gridLayout_21">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_22">
+                    <item row="1" column="0">
+                     <layout class="QGridLayout" name="gridLayout_19">
+                      <item row="0" column="1">
+                       <widget class="QComboBox" name="dil_comboBox">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="editable">
+                         <bool>false</bool>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>24</width>
+                          <height>24</height>
+                         </size>
+                        </property>
+                        <property name="placeholderText">
+                         <string/>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Türkçe</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ingilizce</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_17">
+                        <property name="minimumSize">
+                         <size>
+                          <width>40</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>Dil:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="2">
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QGridLayout" name="gridLayout_79">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_26">
+                        <property name="minimumSize">
+                         <size>
+                          <width>40</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>13</pointsize>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>Uygulama ayarları</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <spacer name="horizontalSpacer_17">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>48</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_settingDurumu">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                        <bold>true</bold>
+                        <underline>false</underline>
+                        <kerning>true</kerning>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(0, 0, 0);</string>
+                      </property>
+                      <property name="text">
+                       <string>Mesaj</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <spacer name="verticalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>17</width>
+                      <height>168</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="icon" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(0, 0, 0);
+	border-bottom-left-radius:10px;
+}
+
+#icon {
+	border-bottom-left-radius:10px;
+
+}
+
+QPushButton {
+	color:white;
+ 	height: 30px;
+	border :none;
+	border-radius:10px;
+}
+
+QPushButton:checked{
+	background-color: rgb(245, 250, 254);
+	color:rgb(0, 0, 0);
+	font-weight:bold;
+}
+
+QPushButton:checked:hover{
+	background-color: rgb(245, 250, 254);
+}
+
+QPushButton:hover  {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Menu</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="anasayfa_ic">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/001-home.png</normaloff>
+             <normalon>:/icons/icon/002-home.png</normalon>:/icons/icon/001-home.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="magaza_ic">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/003-store.png</normaloff>
+             <normalon>:/icons/icon/001-store.png</normalon>:/icons/icon/003-store.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rap_an_ic">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/001-analyzing.png</normaloff>
+             <normalon>:/icons/icon/002-analyzing.png</normalon>:/icons/icon/001-analyzing.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="indirimler_ic">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/002-tag.png</normaloff>
+             <normalon>:/icons/icon/001-tag.png</normalon>:/icons/icon/002-tag.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="KontrolPaneli_ic">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/filterW.png</normaloff>
+             <normalon>:/icons/icon/filterB.png</normalon>
+             <disabledoff>:/icons/icon/filterG.png</disabledoff>:/icons/icon/filterW.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>316</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ayarlar_ic">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>39</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="rec.qrc">
+           <normaloff>:/icons/icon/003-settings-1.png</normaloff>
+           <normalon>:/icons/icon/002-settings.png</normalon>:/icons/icon/003-settings-1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QWidget" name="icon_name" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>176</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(0, 0, 0);
+}
+#icon_name {
+	border-bottom-left-radius:10px;
+}
+
+QPushButton {
+	color:white;
+	text-align:left;
+ 	height: 30px;
+	border :none;
+	padding-left: 10px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+QPushButton:checked{
+	background-color: rgb(245, 250, 254);
+	color:rgb(0, 0, 0);
+	font-weight:bold;
+}
+
+QPushButton:checked:hover{
+	background-color: rgb(245, 250, 254);
+}
+
+QPushButton:hover  {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+QPushButton:disabled {
+    color: #7f8c8d;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Menu</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="anasayfa">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string> Ana Sayfa</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/001-home.png</normaloff>
+             <normalon>:/icons/icon/002-home.png</normalon>:/icons/icon/001-home.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="magaza">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string> Mağaza</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/003-store.png</normaloff>
+             <normalon>:/icons/icon/001-store.png</normalon>:/icons/icon/003-store.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rap_an">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string> Raporlar ve
+ Analizler</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/001-analyzing.png</normaloff>
+             <normalon>:/icons/icon/002-analyzing.png</normalon>:/icons/icon/001-analyzing.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="indirimler">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string> İndirimler</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/002-tag.png</normaloff>
+             <normalon>:/icons/icon/001-tag.png</normalon>:/icons/icon/002-tag.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="KontrolPaneli">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string>Kontrol Paneli</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rec.qrc">
+             <normaloff>:/icons/icon/filterW.png</normaloff>
+             <normalon>:/icons/icon/filterB.png</normalon>
+             <disabledoff>:/icons/icon/filterG.png</disabledoff>:/icons/icon/filterW.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>316</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ayarlar">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>39</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string> Ayarlar</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rec.qrc">
+           <normaloff>:/icons/icon/003-settings-1.png</normaloff>
+           <normalon>:/icons/icon/002-settings.png</normalon>:/icons/icon/003-settings-1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>menu_button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu_button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>anasayfa</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>anasayfa_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>magaza</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>magaza_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rap_an</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>rap_an_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>indirimler</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>indirimler_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ayarlar</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ayarlar_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>710</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>42</x>
+     <y>710</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ayarlar_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ayarlar</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>710</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>710</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>indirimler_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>indirimler</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>189</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rap_an_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>rap_an</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>anasayfa_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>anasayfa</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>magaza_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>magaza</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KontrolPaneli_ic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>KontrolPaneli</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KontrolPaneli</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>KontrolPaneli_ic</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>24</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

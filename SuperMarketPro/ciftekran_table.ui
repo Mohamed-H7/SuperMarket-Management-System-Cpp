@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CiftEkran_Table</class>
+ <widget class="QDialog" name="CiftEkran_Table">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>348</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QTableView" name="tableView">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>470</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableView {
+    background-color: white; /* لون الخلفية العام للجدول */
+	alternate-background-color: rgb(207, 207, 207);
+    border: 1px solid black; /* لون الحدود الخارجية للجدول */
+    gridline-color: black; /* لون خطوط الشبكة بين الخلايا */
+    color: black; /* لون النص */
+    font-size: 16px; /* حجم الخط */
+    selection-background-color: black; /* لون الخلفية عند تحديد خلية */
+    selection-color: white; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item {
+    padding: 10px; /* الحشوة الداخلية للخلايا */
+    background-color: #F4F9FA; /* لون خلفية الخلايا */
+    color: black; /* لون النص في الخلايا */
+}
+
+QTableView::item:selected {
+    background-color: black; /* لون الخلفية عند تحديد خلية */
+    color: #ffffff; /* لون النص عند تحديد خلية */
+}
+
+QTableView::item:hover {
+    background-color: #1abc9c; /* لون الخلفية عند التمرير فوق خلية */
+    color: #ffffff; /* لون النص عند التمرير فوق خلية */
+}
+
+QHeaderView::section {
+    background-color: black; /* لون خلفية رؤوس الأعمدة */
+    color: white; /* لون النص في رؤوس الأعمدة */
+    padding: 5px;
+    border: 1px solid black; /* لون الحدود حول رؤوس الأعمدة */
+    font-size: 14px; /* حجم الخط لرؤوس الأعمدة */
+	font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: black; /* لون خلفية الزر في زاوية الجدول */
+    border: 1px solid black; /* لون الحدود حول زر الزاوية */
+}
+
+QScrollBar:vertical {
+    background-color:  #F4F9FA; /* لون الخلفية للشريط العمودي */
+    width: 16px; /* عرض الشريط */
+    margin: 20px 0 20px 0; /* المسافات العلوية والسفلية للشريط */
+}
+
+QScrollBar::handle:vertical {
+    background-color: black; /* لون مقبض الشريط */
+    min-height: 20px; /* أقل ارتفاع للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background-color: black;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}
+
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+}
+/*------------------------------
+-------------------------------*/
+
+QScrollBar:horizontal {
+    background-color: #F4F9FA; /* لون الخلفية للشريط الأفقي */
+    height: 16px; /* ارتفاع الشريط */
+    margin: 0 20px 0 20px; /* المسافات الجانبية للشريط */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: black; /* لون مقبض الشريط */
+    min-width: 20px; /* أقل عرض للمقبض */
+    border-radius: 5px; /* زوايا دائرية للمقبض */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background-color: black;
+    width: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background-color: gray; /* تغيير لون أزرار الشريط عند التمرير */
+}</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>60</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>130</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="total_label2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid rgb(0, 0, 0);
+border-radius: 10px;
+color: black;
+padding: 8px 5px;
+font-weight:700;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Toplam Tutar: 0 TL</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

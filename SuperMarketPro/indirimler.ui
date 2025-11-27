@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>indirimler</class>
+ <widget class="QDialog" name="indirimler">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+	background-color: white;
+}
+
+QLabel {
+	
+	color: rgb(0, 0, 0);
+}
+
+
+QPushButton {
+	background-color: black;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: black;
+	color: black;
+}
+
+QPushButton:pressed {
+    background-color:   black; 
+    border-color: white;
+	color: white; 
+}
+
+QLineEdit {
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+    border: 2px solid #bdc3c7; 
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    font-size: 12px; 
+}
+
+QLineEdit:focus {
+    border-color: #2c3e50; 
+    background-color: #ffffff; 
+}
+
+QLineEdit:hover {
+    border-color: #34495e; 
+}
+
+/*-----------------------*/
+
+QComboBox {
+    background-color: black; 
+   	border: 2px solid black;
+	padding: 10px 20px; 
+    border-radius: 8px; 
+    padding: 4px; 
+    color: white; 
+    font-size: 16px; /* حجم الخط */
+    combobox-popup: 0; /* منع ظهور قائمة منبثقة خارجية */
+}
+
+QComboBox:hover {
+
+   	border: 2px solid white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px; /* عرض زر القائمة المنسدلة */
+    border-left: 1px solid white; /* خط فاصل بين القائمة المنسدلة وبقية الصندوق */
+}
+
+QComboBox::down-arrow {
+    image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(:/other ic/icon/other ico/arrow up.png)
+}
+
+QComboBox QAbstractItemView {
+    background-color: black; /* لون خلفية القائمة المنسدلة */
+   
+    selection-background-color: black; /* لون خلفية العنصر المحدد */
+    selection-color: white; /* لون النص للعناصر المحددة */
+    color: white; /* لون النص للعناصر غير المحددة */
+}
+
+QComboBox:disabled {
+    background-color: #555555; /* لون خلفية العنصر المعطل */
+    color: #888888; /* لون النص للعنصر المعطل */
+    border: 1px solid #444444; /* لون الحدود للعنصر المعطل */
+}
+
+/*-----------------------*/
+QDateEdit {
+    background-color: #333333; /* لون الخلفية أسود */
+    color: #ffffff; /* لون النص أبيض */
+    border: 1px solid #ffffff; /* حدود بيضاء */
+    padding: 5px;
+    border-radius: 5px;
+    selection-background-color: #555555; /* لون خلفية النص المحدد */
+    selection-color: #ffffff; /* لون النص المحدد */
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 1px solid #ffffff;
+}
+
+QDateEdit::down-arrow {
+
+ image: url(:/other ic/icon/other ico/arrow down.png);
+    width: 10px;
+    height: 10px;
+}
+
+QDateEdit::up-button, QDateEdit::down-button {
+    background-color: #444444; /* خلفية الأزرار */
+    border: none;
+}
+
+QDateEdit::up-button:hover, QDateEdit::down-button:hover {
+    background-color: #555555; /* خلفية الأزرار عند التمرير */
+}
+
+QDateEdit::up-button:pressed, QDateEdit::down-button:pressed {
+    background-color: #666666; /* خلفية الأزرار عند الضغط */
+}
+
+QDateEdit QCalendarWidget {
+    background-color: #333333; /* لون خلفية التقويم */
+    color: #ffffff; /* لون النص */
+    border: 1px solid #ffffff; /* حدود بيضاء */
+    border-radius: 5px; /* زوايا مستديرة */
+}
+
+QCalendarWidget QToolButton {
+    background-color: #444444; /* لون خلفية أزرار التنقل */
+    color: #ffffff; /* لون النص للأزرار */
+    border: none; /* بدون حدود */
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #555555; /* لون خلفية الأزرار عند التمرير */
+}
+
+QCalendarWidget QToolButton:pressed {
+    background-color: #666666; /* لون خلفية الأزرار عند الضغط */
+}
+
+QCalendarWidget QMenu {
+    background-color: #333333; /* لون خلفية القائمة */
+    color: #ffffff; /* لون النص للقائمة */
+    border: 1px solid #ffffff; /* حدود بيضاء */
+}
+
+QCalendarWidget QSpinBox {
+    background-color: #444444; /* لون خلفية SpinBox */
+    color: #ffffff; /* لون النص لـ SpinBox */
+    border: none; /* بدون حدود */
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+    background-color: #555555; /* لون خلفية أزرار SpinBox */
+}
+
+QCalendarWidget QSpinBox::up-button:hover, QCalendarWidget QSpinBox::down-button:hover {
+    background-color: #666666; /* لون خلفية الأزرار عند التمرير */
+}
+
+QCalendarWidget QSpinBox::up-button:pressed, QCalendarWidget QSpinBox::down-button:pressed {
+    background-color: #777777; /* لون خلفية الأزرار عند الضغط */
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #444444; /* لون خلفية شريط التنقل */
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: #333333; /* لون خلفية الأيام */
+    color: black; /* لون النص للأيام */
+    selection-background-color: #555555; /* لون خلفية اليوم المحدد */
+    selection-color: #ffffff; /* لون النص لليوم المحدد */
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #777777; /* لون النص للأيام المعطلة */
+}
+
+QCalendarWidget QAbstractItemView:focus {
+    border: 1px solid #ffffff; /* حدود بيضاء عند التركيز */
+}
+
+
+
+</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_21">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_20">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <fontweight>DemiBold</fontweight>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>indirim yuzdesi</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLineEdit" name="indirim_yuzdesi">
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_8">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <fontweight>DemiBold</fontweight>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Bitiş tarihi</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QDateEdit" name="bitis_tarihi">
+                  <property name="showGroupSeparator" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="currentSection">
+                   <enum>QDateTimeEdit::Section::YearSection</enum>
+                  </property>
+                  <property name="displayFormat">
+                   <string>yyyy-MM-dd</string>
+                  </property>
+                  <property name="calendarPopup">
+                   <bool>true</bool>
+                  </property>
+                  <property name="date">
+                   <date>
+                    <year>2024</year>
+                    <month>1</month>
+                    <day>1</day>
+                   </date>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <fontweight>DemiBold</fontweight>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>indirim adı</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLineEdit" name="indirim_ad">
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_4">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <fontweight>DemiBold</fontweight>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Başlangıç ​​tarihi</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QDateEdit" name="baslangic_tarihi">
+                  <property name="displayFormat">
+                   <string>yyyy-MM-dd</string>
+                  </property>
+                  <property name="calendarPopup">
+                   <bool>true</bool>
+                  </property>
+                  <property name="timeSpec">
+                   <enum>Qt::TimeSpec::UTC</enum>
+                  </property>
+                  <property name="date">
+                   <date>
+                    <year>2024</year>
+                    <month>1</month>
+                    <day>1</day>
+                   </date>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Yeni bir indirim ekle</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_19">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="Line" name="line_3">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>İndirim Uygulama:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Line" name="line_4">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="radioButton_urun">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string>Ürün</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="urun_numara">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit:disabled {
+    background-color: #d3d3d3; /* لون الخلفية عند التعطيل */
+    color: #a0a0a0; /* لون النص عند التعطيل */
+    border: 2px solid #c0c0c0; /* لون الحدود عند التعطيل */
+}
+</string>
+                </property>
+                <property name="placeholderText">
+                 <string>Ürün numarası</string>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="radioButton_kategori">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string>Kategori</string>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+                <property name="autoExclusive">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QComboBox" name="comboBox_Kategori">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Kategori seçiniz</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_durumu">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;</string>
+          </property>
+          <property name="text">
+           <string>Lütfen tüm alanları doldurun</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="iptal_btn">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: red;
+    color: white; 
+    border: 2px solid red;
+    border-radius: 10px; 
+    padding: 8px 13px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: red;
+	color: red;
+}
+
+QPushButton:pressed {
+    background-color:   red; 
+    border-color: white;
+	color: white; 
+}</string>
+              </property>
+              <property name="text">
+               <string>iptal</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="ekle_btn">
+              <property name="minimumSize">
+               <size>
+                <width>85</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(147, 170, 0);
+    color: white; 
+    border: 2px solid rgb(147, 170, 0);
+    border-radius: 10px; 
+    padding: 8px 13px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+	background-color: white; 
+    border-color: rgb(147, 170, 0);
+	color: rgb(147, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color:   rgb(147, 170, 0); 
+    border-color: white;
+	color: white; 
+}</string>
+              </property>
+              <property name="text">
+               <string>Ekle</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

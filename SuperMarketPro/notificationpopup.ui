@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NotificationPopup</class>
+ <widget class="QWidget" name="NotificationPopup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    /* خلفية النافذة بلون أسود */
+    background-color: #1e1e1e;
+    
+    /* حدود النافذة بلون رمادي غامق */
+    border: 1px solid #333333;
+    
+    /* حواف مستديرة للنافذة */
+    border-radius: 8px;
+
+}
+
+QListWidget {
+    /* إزالة حدود الـ QListWidget ليتناسب مع تصميم النافذة */
+    border: none;
+    
+    /* خلفية شفافة أو بلون متناسق مع النافذة */
+    background-color: transparent;
+    
+    /* لون الخط */
+    color: #e0e0e0;
+    font-size: 12px;
+    
+    /* ضبط الفواصل بين العناصر */
+    spacing: 5px;
+}
+
+/* تصميم العناصر داخل QListWidget */
+QListWidget::item {
+    /* ارتفاع ثابت للعناصر */
+    height: 40px;
+    
+    /* محاذاة المحتوى */
+    padding: 2px;
+    
+    /* تخصيص الخلفية الافتراضية */
+    background-color: transparent;
+    
+    /* أيقونة لكل عنصر */
+    color: #e0e0e0;
+}
+
+/* تصميم العناصر عند المرور بالماوس */
+QListWidget::item:hover {
+    /* تغيير لون الخلفية عند المرور بالماوس */
+    background-color: #333333;
+    
+    /* تأثير الحواف المستديرة */
+    border-radius: 5px;
+}
+
+/* تصميم العناصر المحددة */
+QListWidget::item:selected {
+    /* لون خلفية محدد */
+    background-color: #444444;
+    
+    /* لون النص المحدد */
+    color: #ffffff;
+    
+    /* إزالة التأثير الافتراضي للنص المحدد */
+    outline: none;
+}
+
+/* تصميم الشريط التمرير العمودي في QListWidget */
+QListWidget QScrollBar:vertical {
+    /* عرض الشريط */
+    width: 5px;
+    
+    /* خلفية الشريط */
+    background-color: transparent;
+}
+
+/* تصميم المقبض (Thumb) في الشريط التمرير */
+QListWidget QScrollBar::handle:vertical {
+    /* لون المقبض */
+    background-color: #555555;
+    
+    /* حواف مستديرة للمقبض */
+    border-radius: 4px;
+
+}
+
+/* تصميم المقبض عند المرور بالماوس */
+QListWidget QScrollBar::handle:vertical:hover {
+    /* تغيير لون المقبض عند المرور بالماوس */
+    background-color: #777777;
+}
+
+/* تصميم أزرار الشريط التمرير (السهمين) */
+QListWidget QScrollBar::add-line:vertical,
+QListWidget QScrollBar::sub-line:vertical {
+    /* حجم الأزرار */
+    height: 0px;
+    
+    /* عدم عرض الأزرار */
+    subcontrol-origin: margin;
+    subcontrol-position: top;
+    subcontrol-position: bottom;
+}
+
+/* تخصيص الأيقونات والنصوص داخل QListWidget */
+QListWidget::item {
+    padding-left: 10px;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QListWidget" name="bildirimler_list">
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

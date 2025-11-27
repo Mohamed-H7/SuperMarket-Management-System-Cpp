@@ -1,0 +1,65 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icon/001-analyzing.png</file>
+        <file>icon/001-home.png</file>
+        <file>icon/001-more.png</file>
+        <file>icon/001-tag.png</file>
+        <file>icon/002-analyzing.png</file>
+        <file>icon/002-home.png</file>
+        <file>icon/002-settings.png</file>
+        <file>icon/002-shopping-cart.png</file>
+        <file>icon/002-tag.png</file>
+        <file>icon/003-setting.png</file>
+        <file>icon/003-settings-1.png</file>
+        <file>icon/003-shopping-cart.png</file>
+        <file>icon/003-store.png</file>
+        <file>icon/menu 1.png</file>
+        <file>icon/menu black.png</file>
+        <file>icon/waiting1.png</file>
+        <file>icon/001-store.png</file>
+        <file>icon/logout b.png</file>
+        <file>icon/logout w.png</file>
+        <file>icon/filterB.png</file>
+        <file>icon/filterW.png</file>
+        <file>icon/filterG.png</file>
+    </qresource>
+    <qresource prefix="/noti icons">
+        <file>icon/Notif icon/001-notification-1.png</file>
+        <file>icon/Notif icon/002-active.png</file>
+        <file>icon/Notif icon/002-notification.png</file>
+        <file>icon/Notif icon/002-notification-1.png</file>
+        <file>icon/Notif icon/003-active-1.png</file>
+        <file>icon/Notif icon/bell black.png</file>
+        <file>icon/Notif icon/noti yellow.png</file>
+        <file>icon/Notif icon/nott black.png</file>
+    </qresource>
+    <qresource prefix="/other ic">
+        <file>icon/other ico/search.png</file>
+        <file>icon/other ico/001-bin.png</file>
+        <file>icon/other ico/002-delete.png</file>
+        <file>icon/other ico/001-full-screen.png</file>
+        <file>icon/other ico/arrow down.png</file>
+        <file>icon/other ico/arrow up.png</file>
+        <file>icon/other ico/calendar b.png</file>
+        <file>icon/other ico/calendar w.png</file>
+        <file>icon/other ico/refresh.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>icon/logo/Asset 8@1x.png</file>
+        <file>icon/logo/ico.ico</file>
+        <file>icon/logo/ico2.ico</file>
+        <file>icon/logo/logo24.ico</file>
+        <file>icon/logo/logo bw1.png</file>
+        <file>icon/logo/logo ww1.png</file>
+        <file>icon/logo/logo giris.png</file>
+    </qresource>
+    <qresource prefix="/menu icon">
+        <file>icon/menu icon/close.png</file>
+        <file>icon/menu icon/maximize.png</file>
+        <file>icon/menu icon/minus.png</file>
+        <file>icon/menu icon/squares.png</file>
+    </qresource>
+    <qresource prefix="/dil">
+        <file>language/english.qm</file>
+    </qresource>
+</RCC>
